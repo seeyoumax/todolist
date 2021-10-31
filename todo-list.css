@@ -1,0 +1,97 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #808080;
+    background-color: aqua;
+}
+main{
+    order : 6px solid red;
+    width : 500px;
+    margin: 30px auto;
+    text-align: center;
+    background-color: #ffffff;
+    padding: 30px 40px;
+    border-radius: 5px;
+}
+
+#todo-list{
+    list-style: none;
+    padding: 0;
+    margin-top: 30px;
+}
+
+#main-title{
+    color:#10ac84;
+}
+
+
+
+input[type=text]{
+    width: 100%;
+    border: 3px solid black;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+.todo-item{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    align-items: center;
+}
+
+.todo-item span {
+    border: 1px solid red;
+    flex-grow: 1;
+    text-align: left;
+    margin-left: 10px;
+}
+
+input[type = checkbox] {
+    display: none;
+}
+
+.tick {
+    border: 3px solid brown;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.tick::before{
+    content:"\2713" ;
+    color: rgb(12, 196, 67);
+    display: none;
+    
+}
+
+.done .tick::before{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+
+}
+
+.done span{
+    text-decoration: line-through;
+
+}
+
+button img{
+    width: 30px;
+    height: 30px;
+    pointer-events: none;
+}
+
+.todo-item button{
+    background-color: transparent;
+    border:none;
+    cursor: pointer;;
+}
+
+.todo-item button img{
+    width: 30px;
+    height: 30px;
+}
